@@ -45186,7 +45186,7 @@ animate();
 Object.defineProperty(exports, "__esModule", { value: true });
 const THREE = __webpack_require__(0);
 function createScene() {
-    const spaceImage = new THREE.TextureLoader().load("./public/textures/space.png");
+    const spaceImage = new THREE.TextureLoader().load("./textures/space.png");
     const scene = new THREE.Scene();
     scene.background = spaceImage;
     const light = new THREE.PointLight(0xffffff, 1.0);
@@ -45208,7 +45208,7 @@ exports.default = createScene;
 Object.defineProperty(exports, "__esModule", { value: true });
 const THREE = __webpack_require__(0);
 function createEarth() {
-    const texture = new THREE.TextureLoader().load("./public/textures/earth.jpg");
+    const texture = new THREE.TextureLoader().load("./textures/earth.jpg");
     const geometry = new THREE.SphereGeometry(7, 140, 100);
     const material = new THREE.MeshPhongMaterial({
         map: texture,
